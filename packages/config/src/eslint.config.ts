@@ -1,10 +1,11 @@
 import antfu from '@antfu/eslint-config'
+// import playwright from 'eslint-plugin-playwright'
+// import storybook from 'eslint-plugin-storybook'
 // import tailwind from 'eslint-plugin-tailwindcss'
-import playwright from 'eslint-plugin-playwright'
-import storybook from 'eslint-plugin-storybook'
 
 export default antfu(
   {
+    type: 'lib',
     // Enable Vue support
     vue: {
       a11y: true,
@@ -23,9 +24,9 @@ export default antfu(
     formatters: true,
   },
   // ...tailwind.configs['flat/recommended'],
-  ...storybook.configs['flat/recommended'],
-  {
-    files: ['**/tests/e2e/**/*.{test,spec}.{ts,js,tsx,jsx}'],
-    ...playwright.configs['flat/recommended'],
-  },
+  // ...storybook.configs['flat/recommended'],
+  // {
+  //   files: ['**/tests/e2e/**/*.{test,spec}.{ts,js,tsx,jsx}'],
+  //   ...playwright.configs['flat/recommended'],
+  // },
 )
