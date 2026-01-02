@@ -12,8 +12,8 @@
     "src"
   ],
   "scripts": {
-    "dev": "@tailwindcss/cli -i src/style.css -o dist/style.css --watch",
-    "build": "@tailwindcss/cli -i src/style.css -o dist/style.css",
+    "dev": "bun x --bun @tailwindcss/cli -i src/style.css -o dist/style.css --watch",
+    "build": "bun x --bun @tailwindcss/cli -i src/style.css -o dist/style.css",
     "lint": "bun run eslint .",
     "lint:fix": "bun run eslint . --fix"
   },

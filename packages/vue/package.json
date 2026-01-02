@@ -34,11 +34,6 @@
     "@orion-ui/theme": "workspace:*"
   },
   "devDependencies": {
-    "@storybook/addon-essentials": "^8.5.1",
-    "@storybook/addon-interactions": "^8.5.1",
-    "@storybook/blocks": "^8.5.1",
-    "@storybook/test": "^8.5.1",
-    "@storybook/vue3": "^10.1.11",
     "@storybook/vue3-vite": "^10.1.11",
     "@tailwindcss/vite": "^4.1.18",
     "@vitejs/plugin-vue": "^6.0.3",
