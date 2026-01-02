@@ -8,11 +8,11 @@ Orion UI is a modern Vue 3 component library built with [Ark UI](https://ark-ui.
 
 ## Architecture Overview
 
-*   **Monorepo**: Managed with Bun workspaces.
-*   **Component Logic**: Powered by Ark UI (headless accessibility primitives).
-*   **Styling**: Tailwind CSS v4 for utility-first styling.
-*   **Testing**: Vitest for unit tests, Playwright for E2E tests.
-*   **Documentation/Dev**: Storybook.
+- **Monorepo**: Managed with Bun workspaces.
+- **Component Logic**: Powered by Ark UI (headless accessibility primitives).
+- **Styling**: Tailwind CSS v4 for utility-first styling.
+- **Testing**: Vitest for unit tests, Playwright for E2E tests.
+- **Documentation/Dev**: Storybook.
 
 ## Project Structure
 

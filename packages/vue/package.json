@@ -7,8 +7,7 @@
       "types": "./dist/index.d.ts",
       "import": "./dist/index.js",
       "require": "./dist/index.cjs"
-    },
-    "./style.css": "./dist/style.css"
+    }
   },
   "main": "dist/index.cjs",
   "module": "dist/index.js",
@@ -17,19 +16,22 @@
     "dist"
   ],
   "scripts": {
-    "dev": "storybook dev -p 6006",
-    "build": "vite build && vue-tsc --emitDeclarationOnly",
+    "dev": "bun run storybook",
+    "build": "bun run --bun vite build",
     "test": "vitest",
-    "lint": "eslint .",
-    "lint:fix": "eslint . --fix",
-    "type-check": "vue-tsc --noEmit",
-    "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "test:coverage": "vitest run --coverage",
+    "test:ci": "vitest --run",
+    "lint": "bun run eslint .",
+    "lint:fix": "bun run eslint . --fix",
+    "type-check": "bun run vue-tsc",
+    "storybook": "storybook dev -p 6006"
+  },
+  "peerDependencies": {
+    "vue": ">=3.5.0"
   },
   "dependencies": {
     "@ark-ui/vue": "^5.30.0",
-    "@orion-ui/theme": "workspace:*",
-    "vue": "^3.5.0"
+    "@orion-ui/theme": "workspace:*"
   },
   "devDependencies": {
     "@storybook/addon-essentials": "^8.5.1",

@@ -1,16 +1,28 @@
 {
   "compilerOptions": {
+    "target": "ES2023",
+    "jsx": "react-jsx",
+    "lib": [
+      "ESNext",
+      "DOM"
+    ],
+    "moduleDetection": "force",
+    "module": "Preserve",
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
     "strict": true,
-    "module": "ESNext",
-    "moduleResolution": "Bundler",
-    "target": "ESNext",
-    "lib": ["ESNext", "DOM"],
-    "skipLibCheck": true,
-    "composite": true,
-    "declaration": true,
-    "declarationMap": true,
-    "sourceMap": true,
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true
-  }
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitOverride": true,
+    "noPropertyAccessFromIndexSignature": false,
+    "noUncheckedIndexedAccess": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "noEmit": true,
+    "verbatimModuleSyntax": true,
+    "skipLibCheck": true
+  },
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
 }

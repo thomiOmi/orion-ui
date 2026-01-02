@@ -1,4 +1,5 @@
-import { defineConfig, devices } from '@playwright/test';
+import process from 'node:process'
+import { defineConfig, devices } from '@playwright/test'
 
 export default defineConfig({
   testDir: './tests',
@@ -22,4 +23,4 @@ export default defineConfig({
     url: 'http://localhost:6006',
     reuseExistingServer: !process.env.CI,
   },
-});
+})

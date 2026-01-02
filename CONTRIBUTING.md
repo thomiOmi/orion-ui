@@ -4,7 +4,7 @@ Thank you for your interest in contributing to Orion UI! This document provides 
 
 ## Prerequisites
 
-*   [Bun](https://bun.sh) v1.2+
+- [Bun](https://bun.sh) v1.2+
 
 ## Installation
 
@@ -20,16 +20,16 @@ bun install
 
 Run these commands from the root directory:
 
-| Command | Description |
-| :--- | :--- |
-| `bun run dev` | Starts development servers (e.g., Storybook for Vue) |
-| `bun run build` | Builds all packages |
-| `bun run test` | Runs unit tests across all packages |
-| `bun run lint` | Lints all packages |
-| `bun run lint:fix` | Fixes linting errors automatically |
-| `bun run type-check` | Runs TypeScript type checking |
-| `bun run test:e2e` | Runs Playwright End-to-End tests |
-| `bun run release` | Publishes packages using Changesets |
+| Command              | Description                                          |
+| :------------------- | :--------------------------------------------------- |
+| `bun run dev`        | Starts development servers (e.g., Storybook for Vue) |
+| `bun run build`      | Builds all packages                                  |
+| `bun run test`       | Runs unit tests across all packages                  |
+| `bun run lint`       | Lints all packages                                   |
+| `bun run lint:fix`   | Fixes linting errors automatically                   |
+| `bun run type-check` | Runs TypeScript type checking                        |
+| `bun run test:e2e`   | Runs Playwright End-to-End tests                     |
+| `bun run release`    | Publishes packages using Changesets                  |
 
 ### Component Development
 
@@ -37,10 +37,10 @@ To create a new component in `@orion-ui/vue`:
 
 1.  Create a directory: `packages/vue/src/components/{ComponentName}`.
 2.  Add the following files:
-    *   `{ComponentName}.vue`: The component implementation.
-    *   `{ComponentName}.stories.ts`: Storybook stories.
-    *   `{ComponentName}.test.ts`: Vitest unit tests.
-    *   `index.ts`: Export the component.
+    - `{ComponentName}.vue`: The component implementation.
+    - `{ComponentName}.stories.ts`: Storybook stories.
+    - `{ComponentName}.test.ts`: Vitest unit tests.
+    - `index.ts`: Export the component.
 3.  Export the component in `packages/vue/src/index.ts`.
 4.  Run `bun run dev` (Storybook) to visualize and develop the component.
 
@@ -84,9 +84,9 @@ bun run test:e2e --ui
 
 We use ESLint with `@antfu/eslint-config`.
 
-*   Run `bun run lint` to check for issues.
-*   Run `bun run lint:fix` to automatically fix most issues.
-*   Run `bun run type-check` to verify TypeScript types.
+- Run `bun run lint` to check for issues.
+- Run `bun run lint:fix` to automatically fix most issues.
+- Run `bun run type-check` to verify TypeScript types.
 
 ### Release Workflow
 

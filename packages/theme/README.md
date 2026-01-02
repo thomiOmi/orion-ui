@@ -17,7 +17,7 @@ This package exports a main CSS file containing the Tailwind directives and them
 Import the CSS file in your application's entry point (e.g., `main.ts`, `App.vue`, or a global CSS file):
 
 ```css
-@import "@orion-ui/theme/css";
+@import '@orion-ui/theme/css';
 ```
 
 ## Development

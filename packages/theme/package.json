@@ -1,8 +1,8 @@
 {
   "name": "@orion-ui/theme",
+  "type": "module",
   "version": "0.0.0",
   "description": "Core design tokens and styles for Orion UI",
-  "type": "module",
   "exports": {
     ".": "./src/style.css",
     "./css": "./src/style.css"
@@ -12,13 +12,16 @@
     "src"
   ],
   "scripts": {
-    "build": "tailwindcss -i src/style.css -o dist/style.css"
+    "dev": "@tailwindcss/cli -i src/style.css -o dist/style.css --watch",
+    "build": "@tailwindcss/cli -i src/style.css -o dist/style.css",
+    "lint": "bun run eslint .",
+    "lint:fix": "bun run eslint . --fix"
+  },
+  "peerDependencies": {
+    "tailwindcss": "4.1.18"
   },
   "devDependencies": {
     "@tailwindcss/cli": "^4.0.0",
-    "tailwindcss": "4.1.18"
-  },
-  "peerDependencies": {
     "tailwindcss": "4.1.18"
   }
 }
