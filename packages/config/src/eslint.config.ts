@@ -6,7 +6,7 @@ export default antfu({
   // Enable TypeScript support
   typescript: true,
   // Enable JSON support
-  json: true,
+  jsonc: true,
   // Enable YAML support
   yaml: true,
   // Enable Markdown support
