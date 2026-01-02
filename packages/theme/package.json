@@ -1,0 +1,15 @@
+{
+  "name": "@orion-ui/theme",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    "./css": "./src/style.css"
+  },
+  "devDependencies": {
+    "tailwindcss": "4.0.0"
+  },
+  "peerDependencies": {
+    "tailwindcss": "4.0.0"
+  }
+}

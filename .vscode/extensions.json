@@ -1,0 +1,13 @@
+{
+  "recommendations": [
+    "Vue.volar",
+    "bradlc.vscode-tailwindcss",
+    "dbaeumer.vscode-eslint",
+    "oven.bun-vscode",
+    "antfu.iconify",
+    "christian-kohler.path-intellisense",
+    "mikestead.dotenv",
+    "usernamehw.errorlens",
+    "lokalise.i18n-ally"
+  ]
+}
