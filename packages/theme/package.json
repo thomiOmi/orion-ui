@@ -1,12 +1,24 @@
 {
   "name": "@orion-ui/theme",
   "version": "0.0.0",
-  "private": true,
+  "description": "Core design tokens and styles for Orion UI",
   "type": "module",
+  "publishConfig": {
+    "access": "public"
+  },
   "exports": {
+    ".": "./src/style.css",
     "./css": "./src/style.css"
   },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build": "tailwindcss -i src/style.css -o dist/style.css"
+  },
   "devDependencies": {
+    "@tailwindcss/cli": "^4.0.0",
     "tailwindcss": "4.0.0"
   },
   "peerDependencies": {
