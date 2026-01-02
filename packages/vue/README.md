@@ -29,7 +29,7 @@ import { Button } from '@orion-ui/vue'
 Ensure you have imported the theme styles (usually in your app's entry point):
 
 ```css
-@import "@orion-ui/vue/style.css";
+@import '@orion-ui/vue/style.css';
 ```
 
 ## Development
