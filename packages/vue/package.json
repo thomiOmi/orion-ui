@@ -32,7 +32,6 @@
     "vue": "^3.5.0"
   },
   "devDependencies": {
-    "@orion-ui/config": "workspace:*",
     "@storybook/addon-essentials": "^8.5.1",
     "@storybook/addon-interactions": "^8.5.1",
     "@storybook/blocks": "^8.5.1",
