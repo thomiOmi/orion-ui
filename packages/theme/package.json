@@ -21,7 +21,9 @@
     "tailwindcss": "4.1.18"
   },
   "devDependencies": {
+    "@radix-ui/colors": "^3.0.0",
     "@tailwindcss/cli": "^4.0.0",
+    "culori": "^4.0.2",
     "tailwindcss": "4.1.18"
   }
 }
