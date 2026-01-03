@@ -1,0 +1,61 @@
+@theme {
+  --color-gray-25: var(--color-gray-25);
+  --color-gray-50: var(--color-gray-50);
+  --color-gray-100: var(--color-gray-100);
+  --color-gray-200: var(--color-gray-200);
+  --color-gray-300: var(--color-gray-300);
+  --color-gray-400: var(--color-gray-400);
+  --color-gray-500: var(--color-gray-500);
+  --color-gray-600: var(--color-gray-600);
+  --color-gray-700: var(--color-gray-700);
+  --color-gray-800: var(--color-gray-800);
+  --color-gray-900: var(--color-gray-900);
+  --color-gray-950: var(--color-gray-950);
+}
+
+:root {
+  --color-gray-25: oklch(0.9910689031024799 0 none);
+  --color-gray-50: oklch(0.9821176395629414 0 none);
+  --color-gray-100: oklch(0.9551400502551022 0 none);
+  --color-gray-200: oklch(0.9309991411193288 0 none);
+  --color-gray-300: oklch(0.9067006916295425 0 none);
+  --color-gray-400: oklch(0.8853053140427017 0 none);
+  --color-gray-500: oklch(0.8514193414111833 0 none);
+  --color-gray-600: oklch(0.7920743408035346 0 none);
+  --color-gray-700: oklch(0.6434092199216612 0 none);
+  --color-gray-800: oklch(0.6099864491391792 0 none);
+  --color-gray-900: oklch(0.5032293384241285 0 none);
+  --color-gray-950: oklch(0.24353474225450714 0 none);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-gray-25: oklch(0.17763777307657064 0 none);
+    --color-gray-50: oklch(0.21342250711191385 0 none);
+    --color-gray-100: oklch(0.2519647498644126 0 none);
+    --color-gray-200: oklch(0.285017403997646 0 none);
+    --color-gray-300: oklch(0.31316712939792546 0 none);
+    --color-gray-400: oklch(0.3484596543608461 0 none);
+    --color-gray-500: oklch(0.4016665194169638 0 none);
+    --color-gray-600: oklch(0.4890564485258221 0 none);
+    --color-gray-700: oklch(0.5382366621247504 0 none);
+    --color-gray-800: oklch(0.5829156784763553 0 none);
+    --color-gray-900: oklch(0.7699314175046421 0 none);
+    --color-gray-950: oklch(0.9491192605935381 0 none);
+  }
+}
+
+.dark {
+  --color-gray-25: oklch(0.17763777307657064 0 none);
+  --color-gray-50: oklch(0.21342250711191385 0 none);
+  --color-gray-100: oklch(0.2519647498644126 0 none);
+  --color-gray-200: oklch(0.285017403997646 0 none);
+  --color-gray-300: oklch(0.31316712939792546 0 none);
+  --color-gray-400: oklch(0.3484596543608461 0 none);
+  --color-gray-500: oklch(0.4016665194169638 0 none);
+  --color-gray-600: oklch(0.4890564485258221 0 none);
+  --color-gray-700: oklch(0.5382366621247504 0 none);
+  --color-gray-800: oklch(0.5829156784763553 0 none);
+  --color-gray-900: oklch(0.7699314175046421 0 none);
+  --color-gray-950: oklch(0.9491192605935381 0 none);
+}
