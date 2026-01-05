@@ -15,15 +15,24 @@
     "dev": "bun x --bun @tailwindcss/cli -i src/style.css -o dist/style.css --watch",
     "build": "bun x --bun @tailwindcss/cli -i src/style.css -o dist/style.css",
     "lint": "bun run eslint .",
-    "lint:fix": "bun run eslint . --fix"
+    "lint:fix": "bun run eslint . --fix",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "peerDependencies": {
     "tailwindcss": "4.1.18"
   },
   "devDependencies": {
+    "@mdx-js/react": "^3.1.0",
     "@radix-ui/colors": "^3.0.0",
+    "@storybook/addon-essentials": "^8.6.0",
+    "@storybook/vue3-vite": "^8.6.0",
     "@tailwindcss/cli": "^4.0.0",
+    "@tailwindcss/vite": "^4.1.18",
     "culori": "^4.0.2",
-    "tailwindcss": "4.1.18"
+    "storybook": "^8.6.0",
+    "tailwindcss": "4.1.18",
+    "vite": "^7.3.0",
+    "vue": "^3.5.26"
   }
 }
