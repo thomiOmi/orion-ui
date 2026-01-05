@@ -25,3 +25,13 @@ Import the CSS file in your application's entry point (e.g., `main.ts`, `App.vue
 The theme is defined using standard CSS variables and Tailwind v4 `@theme` blocks.
 
 To modify the theme, edit the `src/style.css` file. Changes here will propagate to all packages consuming this theme (like `@orion-ui/vue`).
+
+### Documentation
+
+This package includes a Storybook documentation to visualize the design tokens and examples.
+
+```bash
+bun run storybook
+```
+
+This will open the documentation at `http://localhost:6006`.
