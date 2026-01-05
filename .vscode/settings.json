@@ -14,6 +14,9 @@
     "source.fixAll.eslint": "explicit",
     "source.organizeImports": "never"
   },
+  "editor.quickSuggestions": {
+    "strings": "on"
+  },
   "eslint.useFlatConfig": true,
   "eslint.format.enable": true,
   "eslint.rules.customizations": [
@@ -91,9 +94,6 @@
     "pcss",
     "postcss"
   ],
-  "[vue]": {
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
-  },
   "tailwindCSS.classFunctions": [
     "cva",
     "cx",
