@@ -1,10 +1,16 @@
+// @ts-check
+import path from 'node:path'
+import { fileURLToPath } from 'node:url'
 import antfu from '@antfu/eslint-config'
+import eslintPluginTailwind from 'eslint-plugin-better-tailwindcss'
 import playwright from 'eslint-plugin-playwright'
 import storybook from 'eslint-plugin-storybook'
 
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = path.dirname(__filename)
+
 export default antfu(
   {
-    type: 'lib',
     // Enable Vue support
     vue: {
       a11y: true,
@@ -19,8 +25,6 @@ export default antfu(
     markdown: true,
     // Enable test support (Vitest)
     test: true,
-    // Enable stylistic formatting rules
-    stylistic: true,
     // Enable formatters
     formatters: {
       /**
@@ -39,6 +43,19 @@ export default antfu(
        * By default uses Prettier
        */
       markdown: 'prettier',
+    },
+  },
+  {
+    plugins: {
+      'better-tailwindcss': eslintPluginTailwind,
+    },
+    settings: {
+      'better-tailwindcss': {
+        entryPoint: path.resolve(__dirname, './packages/theme/src/style.css'),
+      },
+    },
+    rules: {
+      ...eslintPluginTailwind.configs.recommended.rules,
     },
   },
   ...storybook.configs['flat/recommended'],
