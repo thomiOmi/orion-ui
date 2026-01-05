@@ -1,15 +1,13 @@
 import antfu from '@antfu/eslint-config'
 // import playwright from 'eslint-plugin-playwright'
 // import storybook from 'eslint-plugin-storybook'
-// import tailwind from 'eslint-plugin-tailwindcss'
+import tailwind from 'eslint-plugin-tailwindcss'
 
 export default antfu(
   {
     type: 'lib',
     // Enable Vue support
-    vue: {
-      a11y: true,
-    },
+    vue: true,
     // Enable TypeScript support
     typescript: true,
     // Enable JSON support
@@ -20,6 +18,8 @@ export default antfu(
     markdown: true,
     // Enable test support (Vitest)
     test: true,
+    // Enable stylistic formatting rules
+    stylistic: true,
     // Enable formatters
     formatters: {
       /**
@@ -40,7 +40,7 @@ export default antfu(
       markdown: 'prettier',
     },
   },
-  // ...tailwind.configs['flat/recommended'],
+  ...tailwind.configs['flat/recommended'],
   // ...storybook.configs['flat/recommended'],
   // {
   //   files: ['**/tests/e2e/**/*.{test,spec}.{ts,js,tsx,jsx}'],
