@@ -1,11 +1,11 @@
-import type { StorybookConfig } from '@storybook/vue3-vite'
+import type { StorybookConfig } from '@storybook/web-components-vite'
 import tailwindcss from '@tailwindcss/vite'
 import { mergeConfig } from 'vite'
 
 const config: StorybookConfig = {
   stories: ['../src/stories/**/*.mdx', '../src/stories/**/*.stories.@(js|jsx|mjs|ts|tsx)'],
   framework: {
-    name: '@storybook/vue3-vite',
+    name: '@storybook/web-components-vite',
     options: {},
   },
   viteFinal: (config) => {
